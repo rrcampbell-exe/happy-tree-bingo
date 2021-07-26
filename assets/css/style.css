@@ -4,8 +4,9 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-    height: 100vh;
+body, html {
+    height: 100%;
+    width: 100%;
 }
 
 /* BINGO CARD STYLES */
@@ -30,8 +31,8 @@ body {
     height: 7vw; 
     font-size: 4em; 
     text-align: center; 
-    color: purple;
-    background-color: lavender;
+    background-color: #ffffff;
+    border: solid 2px black;
 }
 
 .bingo-grid-image {
