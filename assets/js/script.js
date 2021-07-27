@@ -30,5 +30,36 @@ function displayShuffleImg(array) {
     }
 }
 
+let bingoSquare = document.getElementsByTagName("li")
+
+console.log(bingoSquare)
+bingoSquare[0].addEventListener("click", event => {
+    event.preventDefault();
+    bingoSquare[0].classList.toggle("highlighted")
+});
+
+bingoSquare[1].addEventListener("click", event => {
+    event.preventDefault();
+    bingoSquare[1].classList.toggle("highlighted")
+});
+
+bingoSquare[2].addEventListener("click", event => {
+    event.preventDefault();
+    bingoSquare[2].classList.toggle("highlighted")
+});
+
+bingoSquare[3].addEventListener("click", event => {
+    event.preventDefault();
+    bingoSquare[3].classList.toggle("highlighted")
+});
+
+bingoSquare[4].addEventListener("click", event => {
+    event.preventDefault();
+    bingoSquare[4].classList.toggle("highlighted")
+});
+
+
+
 // SHUFFLE BINGO IMAGES ON LOAD
 shuffleBingoImages(bingoImgArray)
+
