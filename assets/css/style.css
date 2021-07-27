@@ -31,8 +31,16 @@ body, html {
     height: 7vw; 
     font-size: 4em; 
     text-align: center; 
-    background-color: #ffffff;
+    background-color: #ffffffb8;
     border: solid 2px black;
+    transition-duration: 0.5s;
+}
+
+.highlighted {
+    border: solid 4px #32ff6f;
+    background-color: #ffffff;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 .bingo-grid-image {
