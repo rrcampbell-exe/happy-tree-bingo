@@ -30,40 +30,20 @@ function displayShuffleImg(array) {
     }
 }
 
-// use something like the below, maybe, to stand in for index in below set of functions
-// https://stackoverflow.com/questions/35004505/set-a-range-of-numbers-as-a-variable-javascript
-
-// for example, you could have bingoSquare[outputOfSomeFunction].addEventListener...
+// HANDLING CLASS TOGGLES UPON CLICK EVENTS
 
 let bingoSquare = document.getElementsByTagName("li")
 
-console.log(bingoSquare)
-bingoSquare[0].addEventListener("click", event => {
-    event.preventDefault();
-    bingoSquare[0].classList.toggle("highlighted")
-});
+for (var i = 0; i < bingoSquare.length; i++) {
+    bingoSquare[i].addEventListener("click", highlightClass(i));
+}
 
-bingoSquare[1].addEventListener("click", event => {
-    event.preventDefault();
-    bingoSquare[1].classList.toggle("highlighted")
-});
-
-bingoSquare[2].addEventListener("click", event => {
-    event.preventDefault();
-    bingoSquare[2].classList.toggle("highlighted")
-});
-
-bingoSquare[3].addEventListener("click", event => {
-    event.preventDefault();
-    bingoSquare[3].classList.toggle("highlighted")
-});
-
-bingoSquare[4].addEventListener("click", event => {
-    event.preventDefault();
-    bingoSquare[4].classList.toggle("highlighted")
-});
-
-
+function highlightClass(i) {
+ return function() {
+    bingoSquare[i].classList.toggle("highlighted")
+    bingoSquare[i].classList.toggle("unhighlighted")
+ };
+}
 
 // SHUFFLE BINGO IMAGES ON LOAD
 shuffleBingoImages(bingoImgArray)
