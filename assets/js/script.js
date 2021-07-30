@@ -34,7 +34,7 @@ function displayShuffleImg(array) {
 
 let bingoSquare = document.getElementsByTagName("li")
 
-for (var i = 0; i < bingoSquare.length; i++) {
+for (let i = 0; i < bingoSquare.length; i++) {
     bingoSquare[i].addEventListener("click", highlightClass(i));
 }
 
