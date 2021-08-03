@@ -50,18 +50,51 @@
       </div>
       <div class="instructions-container col-6">
         <h2>How to Play</h2>
-        <div class="instructions">
-          <ol>
-            <li>Tune in to the <a href="https://www.twitch.tv/hence_fort/" target="_blank">Hence Fort Twitch stream</a> on Fridays.</li>
-            <li>When Hence says or does anything associated with a prospective bingo space, he'll call out the bingo space in question.</li>
-            <li>If you have that bingo space on your card, click it to turn it yellow!</li>
-            <li>Once you have a complete row, column, or diagonal, screenshot your bingo card, post it in the #bingo-submissions channel in the <a href="https://discord.gg/dYTCj7jpaA" target="_blank">Hence Fort Discord</a>, and let Hence know in the Twitch chat!</li>
-            <li>If Hence confirms you've won, you'll have the chance to join him on air for a future Stardew Valley community farm stream!</li>
-          </ol>
+        <div>
+          <div id="instructions-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner carousel">
+              <div class="carousel-item carousel-background active">
+                <img src="./assets/images/three-carrot-salute.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>1. Tune In</h5>
+                  <p>Tune in to the <a href="https://www.twitch.tv/hence_fort/" target="_blank">Hence Fort Twitch stream</a> on Fridays in order to play.</p>
+                </div>
+              </div>
+              <div class="carousel-item carousel-background">
+                <img src="./assets/images/headphones.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>2. Listen for Bingo Spaces</h5>
+                  <p>When Hence calls out a bingo space, mark it on your card by clicking it.</p>
+                </div>
+              </div>
+              <div class="carousel-item carousel-background">
+                <img src="./assets/images/winning-arrows.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>3. Complete a Row, Column, or Diagonal</h5>
+                  <p>Once you have a complete row, column, or diagonal, screenshot your bingo card, post it in the #bingo-submissions channel in the <a href="https://discord.gg/dYTCj7jpaA" target="_blank">Hence Fort Discord</a>, and let Hence know in the Twitch chat!</p>
+                </div>
+              </div>
+              <div class="carousel-item carousel-background">
+                <img src="./assets/images/winner.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>4. Win?!?!?</h5>
+                  <p>If Hence confirms you've won, you'll have the chance to join him on air for a future Stardew Valley community farm stream!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#instructions-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#instructions-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         <div class="key">
           <h2>Image Explanations</h2>
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div id="key-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner  carousel">
               <div class="carousel-item carousel-background active">
                 <img src="./assets/images/baby-haipe.jpg" class="d-block w-100" alt="...">
@@ -73,240 +106,240 @@
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/bee-house.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h5>A Bee House?!</h5>
+                  <p>Click this space when Hence says "bee house," when the "bee house" song plays, or when Hence interacts with a bee house on stream.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/clint-mad.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>%$#@^$* Clint!</h5>
+                  <p>No one likes Clint! If Hence talks smack about Clint, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/do-not-eat.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"Don't eat that!"</h5>
+                  <p>If Farmer Hence almost eats an item by accident, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/good-old-fashioned.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"Good Old Fashioned"</h5>
+                  <p>If Hence says "good old fashioned" (usually in reference to the Stardew Valley wiki), click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/hype-goat.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>HYPE GOAT!</h5>
+                  <p>Whenever the Hype Goat video is played, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/mermaids-pendant.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Lost Loves</h5>
+                  <p>Whenever Hence mentions how he could have married Abigail, Emily, or Maru before ultimately choosing Leah, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/peanut-butt.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Peanut Butt!</h5>
+                  <p>Whenever Farmer Hence rides Peanut Butt, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/pierre-mad.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Pierre = the Worst</h5>
+                  <p>If Hence talks smack about Pierre, mark this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/pizza.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Pizza!</h5>
+                  <p>If the topic of pizza comes up on stream, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/marnie-closed.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Marnie... come on.</h5>
+                  <p>If Farmer Hence visits Marnie's shop when it's closed, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/robin-closed.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Please Build Things?</h5>
+                  <p>If Farmer Hence visits Robin's shop when it's closed, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/sandy-lonely.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>I'm So Lonely</h5>
+                  <p>If Sandy mentions how lonely she is, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/careless-death.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"How do you function in society?"</h5>
+                  <p>If Farmer Hence dies a careless death (in the mines, Skull Cavern, Ginger Island, etc.), click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/raid.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Raid!</h5>
+                  <p>If the stream is raided, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/goat-fact.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Definitely Real Goat Facts</h5>
+                  <p>When a viewer redeems the Goat Fact reward, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/obamode.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"Now, look—"</h5>
+                  <p>When a viewer redeems the Obamode reward, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/laugh-track.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>laugh_track.mp3</h5>
+                  <p>When Hence plays the laugh track sound effect, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/mr-krabs.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>*laughs in money*</h5>
+                  <p>When Hence plays the Mr. Krabs "Hello, I like money" sound effect, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/you-blew-it.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"You blew it!"</h5>
+                  <p>When Hence plays the "I love you, buddy, but you blew it" sound effect, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/you-donkey.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"You donkey!"</h5>
+                  <p>When Hence plays the "You %()$*&% donkey" sound effect, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/change-hat.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>New Hat</h5>
+                  <p>When Farmer Hence changes his hat, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/leah-gives-gift.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>D'aww</h5>
+                  <p>When Leah gives Farmer Hence a gift, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/hydrate.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Hydrate!</h5>
+                  <p>When someone redeems the "Hydrate" channel point reward, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/bits.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Make it Rain!</h5>
+                  <p>When someone uses bits during the stream (including when sticking stickers to the stream!), click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/new-follower.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Welcome In!</h5>
+                  <p>When a viewer becomes a new follower, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/subscription.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Subscription!</h5>
+                  <p>On a new or returning sub, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/regifting.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"Yeah, but what if I gave this... to you?"</h5>
+                  <p>If Farmer Hence re-gifts any item he received from another character, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/forgot-mushrooms.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>For Real?</h5>
+                  <p>If the mushroom cave contains only common mushrooms, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/no-bed-sleep.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Goodnight, Sweet Hence</h5>
+                  <p>If Farmer Hence falls asleep somewhere other than a bed, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/real-stumper.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"This is a real stumper."</h5>
+                  <p>If Hence declares a riddle to be "a real stumper" before someone solves it almost immediately, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/cat-in-way.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>"Are you serious right now?"</h5>
+                  <p>When Farmer Hence's cat, Sir Mouser, gets in the way, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/sticker.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Slap It On Stream!</h5>
+                  <p>When someone slaps a sticker on stream, click this space.</p>
                 </div>
               </div>
               <div class="carousel-item carousel-background">
                 <img src="./assets/images/singing-stone.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>Sing Us a Song</h5>
+                  <p>When Farmer Hence interacts with the singing stone, click this space.</p>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#key-carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#key-carousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -314,7 +347,15 @@
         </div>
       </div>
     </div>
+
+<!-- INSERT EXPLANATION COLUMN HERE FOR TABLET AND MOBILE DEVICES -->
+
+</div>
+<div class="row">
+  <div class="button-container col-12">
+    <button id="toggle-instructions">Toggle Explanations</button>
   </div>
+</div>
   <script src="assets/js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

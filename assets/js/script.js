@@ -45,6 +45,20 @@ function highlightClass(i) {
  };
 }
 
+// TOGGLE APPEARANCE OF INSTRUCTIONS CONTAINER
+const expToggleBtn = document.querySelector("#toggle-instructions")
+expToggleBtn.addEventListener("click", toggleInstContainer)
+
+function toggleInstContainer() {
+    const instContainer = document.querySelector(".instructions-container");
+    const bingoContainer = document.querySelector(".bingo-grid")
+
+    instContainer.classList.toggle("display-none")
+    bingoContainer.classList.toggle("col-12")
+    bingoContainer.classList.toggle("col-6")
+    bingoContainer.classList.toggle("center-bingo")
+}
+
 // SHUFFLE BINGO IMAGES ON LOAD
 shuffleBingoImages(bingoImgArray)
 
