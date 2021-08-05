@@ -55,7 +55,8 @@ function toggleInstContainer() {
 
     instContainer.classList.toggle("display-none")
     bingoContainer.classList.toggle("col-12")
-    bingoContainer.classList.toggle("col-6")
+    bingoContainer.classList.toggle("col-lg-6")
+    // bingoContainer.classList.toggle("col-6")
     bingoContainer.classList.toggle("center-bingo")
 }
 

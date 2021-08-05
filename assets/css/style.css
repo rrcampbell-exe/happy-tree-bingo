@@ -7,17 +7,42 @@
 body, html {
     height: 100%;
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffffb8;
+    border-bottom: 2px solid black;
+    align-items: center;
+}
+
+header span {
+    font-size: 3vw;
+    padding-right: 3%;
 }
 
 .game-title {
     font-size: 5vw;
-    padding: 5px;
-    border: 2px solid black;
-    background-color: #ffffffb8;
-    text-align: center;
-    margin-left: 30%;
-    margin-right: 30%;
+    padding-left: 3%;
+}
+
+.container {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BUTTON STYLES */
+
+#toggle-instructions {
+    transition-duration: 0.5s;
+}
+
+#toggle-instructions:hover {
+    color: #039739;
+    transition-duration: 0.5s;
 }
 
 
@@ -63,7 +88,7 @@ body, html {
 }
 
 .bingo-grid {
-    padding-bottom: 5px;
+    padding-top: 2%;
 }
 
 /* CAROUSEL AREA STYLES */
@@ -82,6 +107,7 @@ body, html {
 
 .instructions-container h2 {
     text-align: center;
+    font-size: 3vw;
 }
 
 .instructions, .key {
@@ -128,28 +154,49 @@ body, html {
     margin-left: .8vw;
 }
 
-/* BUTTON STYLES */
+/* MEDIA QUERIES */
 
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+@media screen and (max-width: 991px) {
+    .center-bingo-small {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 1vw;
+    }
 }
 
-#toggle-instructions {
-    padding-top: 10px;
-    padding: 5px;
-    background-color: #ffffffb8;
-    border: solid 2px black;
-    transition-duration: 0.5s;
+@media screen and (max-width: 767px) {
+    #sortable {
+        list-style-type: none; 
+        padding: 0; 
+        width: 90vw;
+    }
+
+    #sortable li,
+    #free-space {
+        margin: .5vw .5vw 0 0; 
+        padding: 1px; 
+        float: left; 
+        width: 14vw; 
+        height: 14vw; 
+        text-align: center; 
+    }
 }
 
-#toggle-instructions:hover {
-    padding-top: 10px;
-    padding: 5px;
-    transition-duration: 0.5s;
-    border: solid 4px #fff832;
-    background-color: #ffe100;
-    transform: scale(1.06);
-    transition-duration: 0.5s;
+@media screen and (max-width: 593px) {
+    #sortable {
+        list-style-type: none; 
+        padding: 0; 
+        width: 85vw;
+    }
+
+    #sortable li,
+    #free-space {
+        margin: .5vw .5vw 0 0; 
+        padding: 1px; 
+        float: left; 
+        width: 14vw; 
+        height: 14vw; 
+        text-align: center; 
+    }
 }
