@@ -163,6 +163,14 @@ header span {
         margin-top: 0;
         margin-left: 1vw;
     }
+
+    .col-1 {
+        display: none;
+    }
+
+    .instructions-container {
+        max-width: none;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -198,5 +206,14 @@ header span {
         width: 14vw; 
         height: 14vw; 
         text-align: center; 
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .center-bingo-small {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-left: 6vw;
     }
 }
